@@ -1,0 +1,25 @@
+
+<html>
+	<head>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<link rel="stylesheet" href="style.css" />
+		<title>jQuery Example</title>
+		<script>			
+        	$(document).ready(function() {
+			  $.ajaxSetup({ cache: true });
+				$.getScript('//connect.facebook.net/en_UK/all.js', function(){
+						FB.init({
+							appId: '148497565344533',
+							channelUrl: 'http://mosheberman.com/trollyze/channel.html',
+						});
+
+						$('#loginbutton,#feedbutton').removeAttr('disabled');
+						FB.getLoginStatus(updateStatusCallback);
+					});
+			});
+			</script>
+	</head>
+	<body>
+
+	</body>
+</html>
