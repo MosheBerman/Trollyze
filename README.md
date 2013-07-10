@@ -1,4 +1,4 @@
 Trollyze
 ========
 
-Trollyze ("troll - eyes") is a FB comment anaylzer.
+Trollyze ("troll - eyes") is a FB comment analyzer.
